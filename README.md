@@ -5,7 +5,13 @@ This is a project made by me along with some help my from my group members as a 
 The project is currently incapable of handling any exception/bug.
 
 The machine code should be written in capitals and error free. Use single spaces between instructions.
-The memory mapping is done by double clicking a tuple in the memory section, editing the values, and then pressing "Set Values". Example 2C  X  123
+The memory mapping is done by double clicking a tuple in the memory section, editing the values, and then pressing "Set Values". 
+
+**Example:**
+
+After pressing 2C memory block;
+
+2C  X  123
 
 **To use:**
 ~~~~
@@ -19,10 +25,12 @@ python JC-62\ Simulator.py
 * MBA - Copy the value of accumulator to register B
 * ADD - Add the values of accumulator to register B and write-back into accumulator
 * SUB - Subtract the values of accumulator from register B and write-back into accumulator. Negative Flag (NF) is set high(1) in case the value obtained is negative.
+* JMP AH - Jump to address A in hexadecimal base.
+* JN AH - Jump to address A in hexadecimal base if negative flag (NF) is set high.
 * HLT - Halt the program.
 
 
-Sample Code to Test: ( performs addition of X and Y and stored back at location Y. Map values into X and Y before running ) 
+Sample Code to Test: (performs addition of X and Y and stored back at location Y. Map values into X and Y before running) 
 ~~~~
 LDA X
 MBA

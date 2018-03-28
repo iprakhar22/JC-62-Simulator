@@ -24,7 +24,7 @@ python JC-62\ Simulator.py
 * STA X - Store the value of accumulator at the memory location at label X
 * MBA - Copy the value of accumulator to register B
 * ADD - Add the values of accumulator to register B and write-back into accumulator
-* SUB - Subtract the values of accumulator from register B and write-back into accumulator. Negative Flag (NF) is set high(1) in case the value obtained is negative.
+* SUB - Subtract the values of register B from accumulator and write-back into accumulator. Negative Flag (NF) is set high(1) in case the value obtained is negative.
 * JMP AH - Jump to address A in hexadecimal base.
 * JN AH - Jump to address A in hexadecimal base if negative flag (NF) is set high.
 * HLT - Halt the program.

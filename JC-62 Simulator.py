@@ -209,7 +209,7 @@ def ADD():
     PC.configure(text=PCCounter+1)
     MAR.configure(text=PCCounter)
     ACCValue=ACCValue+BValue
-    ACC.configure(text=ACCValue+BValue)
+    ACC.configure(text=ACCValue)
     MDR.configure(text='04')
     IR.configure(text='04')
     B.configure(text=BValue)
